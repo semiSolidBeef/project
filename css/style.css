@@ -66,7 +66,7 @@ li {
   line-height: 100%;
   color: #1a0a03;
   width: 366px;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .head-second-sec {
   font-family: "Source Serif Pro";
@@ -74,11 +74,16 @@ li {
   font-weight: 600;
   font-size: 44px;
   line-height: 130%;
-  /* or 57px */
-	width: 340px;
-
-  /* Black */
-
+  width: 340px;
+  color: #1a0a03;
+}
+.third-col-descr {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 130%;
+  text-align: center;
   color: #1a0a03;
 }
 .parag-scn-sect {
@@ -108,10 +113,73 @@ li {
 .first-sect {
   padding-top: 114px;
   justify-content: space-between;
-	
+}
+.third-sect {
 }
 .second-sect {
-	padding-top: 100px;
-	justify-content: space-between;
-	height: 510px;
+  padding-top: 100px;
+  justify-content: space-between;
+  height: 510px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 40px;
+}
+.central-elem {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #ee5514;
+}
+.third-sect-card {
+  display: grid;
+  grid-area: 3fr / 1fr;
+}
+.cards-div {
+  text-align: center;
+  padding: 55px 110px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+}
+.card-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  color: #1a0a03;
+  width: 239px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.card-link {
+  text-decoration: none;
+  color: #ee5514;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+}
+.card-descr {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  /* identical to box height, or 33px */
+
+  text-align: center;
+
+  /* Black */
+
+  color: #1a0a03;
 }
