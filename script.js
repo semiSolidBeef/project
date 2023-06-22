@@ -1,17 +1,53 @@
-import React from "react";
-import ReactDOM from "react-dom";
+const data = [
+  {
+    image: "./img/card1.svg",
+    title: "Qualuty",
+    description:
+      "Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul",
+    link: "Read more",
+  },
+  {
+    image: "./img/card2.svg",
+    title: "Flexible",
+    description:
+      "Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul",
+    link: "Read more",
+  },
+  {
+    image: "./img/card3.svg",
+    title: "Long Lasting",
+    description:
+      "Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul",
+    link: "Read more",
+  },
+];
 
-const names = ["whale", "squid", "turtle", "coral", "starfish"];
+const parentElement = document.getElementById("parent");
 
-const NamesList = () => (
-  <div>
-    <ul>
-      {names.map((name) => (
-        <li key={name}> {name} </li>
-      ))}
-    </ul>
-  </div>
-);
+const blocks = data.map((item) => {
+  const block = document.createElement("div");
+  block.className = "block";
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<NamesList />, rootElement);
+  const image = document.createElement("img");
+  image.className = "image";
+  image.textContent = item.image;
+  image.src = item.image;
+
+  const title = document.createElement("h2");
+  title.className = "title";
+  title.textContent = item.title;
+
+  const description = document.createElement("p");
+  description.className = "description";
+  description.textContent = item.description;
+
+  block.appendChild(image);
+  block.appendChild(title);
+  block.appendChild(description);
+
+  return block;
+});
+
+blocks.forEach((block) => {
+  parentElement.appendChild(block);
+});
