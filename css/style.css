@@ -221,13 +221,34 @@ li {
 	margin-right: 30px;
 	
 }
+.swiper {
+	position: relative;
+  width: 1140px;
+  height: 575px;
+
+}
+.swiper-button-next, .swiper-button-prev {
+position: absolute;
+left: 0;
+}
+.itc-slider__item {
+	position: absolute;
+	
+}
 
 .li-gen {
 	 padding-bottom: 2px;
-	border-bottom: 1px solid #000; 
+	border-bottom: 1px solid #EE5514;
+	color: #EE5514;
+	
 	text-align: center;
 }
-
+.itc-slider__items {
+	display: flex;
+}
+.itc-slider__item {
+	background: #f1a7a7;
+}
 .title {
   font-family: "Source Serif Pro";
   font-style: normal;
