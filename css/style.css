@@ -1,3 +1,4 @@
+@import "slick.scss";
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 body {
   min-width: 100%;
   margin: 0 auto;
-  background: transparent url(../img/bg.png) no-repeat;
+  background: transparent url(../img/bg.png) no-repeat ;
 }
 
 .list-reset {
@@ -15,7 +16,7 @@ body {
 a {
   text-decoration: none;
 }
-li {
+.header-link {
   margin-right: 40px;
 }
 .general-li-elem {
@@ -33,9 +34,10 @@ li {
   font-size: 20px;
   line-height: 160%;
   color: #1a0a03;
+	margin-right: 30px;
 }
 .li-elem:last-child {
-  margin: 0;
+  margin: 0px;
 }
 .btn {
   font-family: "Poppins";
@@ -113,11 +115,11 @@ li {
   opacity: 0.7;
 }
 .first-sect {
-  padding-top: 114px;
+  padding-top: 50px;
   justify-content: space-between;
 }
 .second-sect {
-  padding-top: 100px;
+  padding-top: 400px;
   justify-content: space-between;
   height: 510px;
 }
@@ -220,20 +222,19 @@ li {
   margin-right: 30px;
 }
 .swiper {
-  
   width: 1140px;
   height: 575px;
 }
-	/* .swiper-button-next,
+/* .swiper-button-next,
 	.swiper-button-prev {
 		
 	} */
 .itc-slider__item {
- height: 400px;
- width: 263px;
+  height: 400px;
+  width: 263px;
 }
 .swiper-slide {
-	height: 400px;
+  height: 400px;
 }
 
 .li-gen {
@@ -245,8 +246,8 @@ li {
 }
 .itc-slider__items {
   display: flex;
-	background: #f1a7a7;
-	width: 263px;
+  background: #f1a7a7;
+  width: 263px;
 }
 
 .title {
@@ -272,6 +273,10 @@ li {
   color: #1a0a03;
   opacity: 0.7;
   margin-bottom: 20px;
+}
+
+.swiper-slide {
+  vertical-align: top;
 }
 /* .card-descr {
   font-family: "Poppins";
@@ -343,15 +348,15 @@ li {
   line-height: 33px;
   letter-spacing: 0em;
   text-align: left;
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .size-type {
   display: flex;
-	margin-bottom: 10px;	
+  margin-bottom: 10px;
 }
 .pr-price {
   display: flex;
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .size,
 .pr {
@@ -363,8 +368,8 @@ li {
   text-align: left;
 }
 .slider-img {
-	margin-bottom: 20px;
-} 
+  margin-bottom: 20px;
+}
 .price,
 .type {
   font-family: "Poppins";
@@ -373,5 +378,75 @@ li {
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
-	padding-left: 5px;
+  padding-left: 5px;
+}
+.menu {
+	position: absolute;
+	top: 563px;
+	background-color: #333;
+	width: 792px;
+	height: 125px;
+	border-radius: 5px;
+
+}
+
+.menu a {
+  text-decoration: none;
+}
+.menu li {
+  list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	
+}
+.menu li:not(:last-child) {
+  margin-right: 100px;
+	
+}
+.menu-list {
+  display: flex;
+	align-items: center;
+	height: 125px; 
+	padding-left: 50px;
+}
+.menu-list > li:hover .sub-menu-list{
+	
+	display: block;
+}
+.menu-descr {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+	color: #1A0A03;
+}
+
+.menu-elem {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+	color: #1A0A03;
+	position: relative;
+}
+.sub-menu-list {
+	overflow: auto;
+	position: absolute;
+	top: 50px; 
+	display: none;
+	background: #9c8e8e;
+	
+}
+.sub-menu-link {
+	font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+	color: #1A0A03;
 }
