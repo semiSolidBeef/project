@@ -62,6 +62,8 @@ blocks.forEach((block) => {
 $('.swiper-wrapper').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 1000,
+
+	
 });
