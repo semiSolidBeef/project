@@ -60,7 +60,8 @@ a {
 }
 .header {
   justify-content: space-between;
-  /* border-bottom: 1px solid #333; */
+  border-bottom: 1px solid #cccccc;
+	padding-bottom: 15px;
 }
 .head {
   font-family: "Source Serif Pro";
@@ -82,12 +83,8 @@ a {
   font-weight: 600;
   font-size: 44px;
   line-height: 130%;
-  /* or 57px */
   width: 340px;
-
-  /* Black */
-
-  color: #1a0a03;
+	color: #1a0a03;
 }
 .parag-scn-sect {
   font-family: "Source Serif Pro";
@@ -169,21 +166,7 @@ a {
   justify-content: space-evenly;
   margin-bottom: 140px;
 }
-/* .card-img {
-  width: 140px;
-  height: 140px;
-  margin: 56px 110px;
-} */
-/* .card-text {
-  font-family: "Source Serif Pro";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 150%;
-  text-align: center;
-  color: #1a0a03;
-  margin-bottom: 10px;
-} */
+
 .image {
   display: flex;
   align-items: center;
@@ -226,10 +209,7 @@ a {
   width: 1140px;
   height: 475px;
 }
-/* .swiper-button-next,
-	.swiper-button-prev {
-		
-	} */
+
 .itc-slider__item {
   height: 400px;
   width: 263px;
@@ -279,19 +259,7 @@ a {
 .swiper-slide {
   vertical-align: top;
 }
-/* .card-descr {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
-  text-align: center;
-  width: 239px;
-  margin: 0 auto;
-  color: #1a0a03;
-  opacity: 0.7;
-  margin-bottom: 20px;
-} */
+
 .read-more {
   font-family: "Poppins";
   font-style: normal;
